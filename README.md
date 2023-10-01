@@ -53,7 +53,7 @@ This target will run your solution against the input provided by Advent of Code 
 the puzzle in question, for the "Calorie Counting" puzzle mentioned above 👆 this 
 target will be invoked as follows.
 ```
-make run YEAR=2022 DAY=1 PATH="./path/to/adventofcode/puzzle/input.txt"
+make run YEAR=2022 DAY=1 INPUT="./path/to/adventofcode/puzzle/input.txt"
 ```
 
 #### `test`

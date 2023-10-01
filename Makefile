@@ -7,7 +7,7 @@ init: init-solution.sh
 	@./init-solution.sh $(YEAR) $(DAY) $(NAME)
 
 run:
-	@go run ./solutions/year-$(YEAR)/day-$$(printf %02d $(DAY)) $(PATH)
+	@go run ./solutions/year-$(YEAR)/day-$$(printf %02d $(DAY)) $(INPUT)
 
 test: 
 	@go test -v ./packages/*
