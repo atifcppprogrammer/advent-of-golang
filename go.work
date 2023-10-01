@@ -3,4 +3,5 @@ go 1.21.1
 use (
 	./packages/utilities
 	./solutions/year-2022/day-01
+	./solutions/year-2022/day-02
 )
