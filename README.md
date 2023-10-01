@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./gopher.png" width="250" height="auto">
   <h4 align="center">
-    Solutions to <a href="https://adventofcode.com">Advent of Code</a> puzzles in Golang.
+    Solutions to <a href="https://adventofcode.com">Advent of Code</a> puzzles in Golang
   </h4>
   <p align="center">
     <a href="https://github.com/atifcppprogrammer/advent-of-golang/blob/master/LICENSE">
@@ -74,7 +74,7 @@ make format
 This target will commit your solution with a pre-defined commit message, this will
 ensure that all commits carrying a solution follow a consistent pattern, keeping 
 with the "Calorie Counting" example the following command will create the commit 
-message `solution: year-2022/01`.
+message `solution: year-2022/day-01`.
 ```
 make solution YEAR=2022 DAY=1
 ```
