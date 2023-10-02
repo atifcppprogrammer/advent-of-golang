@@ -1,2 +1,2 @@
 #!/bin/sh
-go work edit -fmt && gofmt -l -s -w .
+make format
