@@ -14,11 +14,11 @@ test:
 	@go test -v ./solutions/*/*
 
 solution:
-	@git add go.work && git add solutions; \
+	@git add go.work && git add "solutions/year-$(YEAR)/day-$$(printf %02d $(DAY))"; \
 	git commit -m "solution: year-$(YEAR)/day-$$(printf %02d $(DAY))"
 
 improve:
-	@git add go.work && git add solutions; \
+	@git add go.work && git add "solutions/year-$(YEAR)/day-$$(printf %02d $(DAY))"; \
 	./scripts/makefile-improve.sh $(YEAR) $(DAY)
 
 format: 
