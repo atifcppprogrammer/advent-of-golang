@@ -17,6 +17,10 @@ solution:
 	@git add go.work && git add solutions; \
 	git commit -m "solution: year-$(YEAR)/day-$$(printf %02d $(DAY))"
 
+improve:
+	@git add go.work && git add solutions; \
+	./scripts/makefile-improve.sh $(YEAR) $(DAY)
+
 format: 
 	@go work edit -fmt
 	@gofmt -l -s -w  .

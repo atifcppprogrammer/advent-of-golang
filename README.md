@@ -78,3 +78,23 @@ message `solution: year-2022/day-01`.
 ```
 make solution YEAR=2022 DAY=1
 ```
+
+#### `improve`
+This target will open your git editor with a pre-existing commit template for 
+commiting improvements you have made to a **single** solution, keeping with the
+"Calorie Counting" example the following command.
+```
+make improve YEAR=2022 DAY=1
+```
+
+will open the configured editor with the following message, please provide each
+improvement you make as a single bullet point.
+```
+improvement: year-2022/day-01
+
+# please explain what improvements you made
+- improvement-1
+- improvement-2
+- improvement-3
+- etc.
+```
