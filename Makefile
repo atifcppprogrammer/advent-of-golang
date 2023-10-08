@@ -1,10 +1,10 @@
 setup:
-	@chmod +x ./init-solution.sh
+	@chmod +x ./scripts/*
 	@chmod +x .git-hooks/*
 	@cp .git-hooks/* .git/hooks
 
-init: init-solution.sh
-	@./init-solution.sh $(YEAR) $(DAY) $(NAME)
+init: ./scripts/makefile-init.sh
+	@./scripts/makefile-init.sh $(YEAR) $(DAY) $(NAME)
 
 run:
 	@go run ./solutions/year-$(YEAR)/day-$$(printf %02d $(DAY)) $(INPUT)

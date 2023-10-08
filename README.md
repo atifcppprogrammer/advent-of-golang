@@ -32,9 +32,9 @@ mundane actions. A brief explanation for each such target is provided below.
 
 #### `setup`
 This target sets up the git hooks provided in the `.git-hooks` directory and makes
-the `init-solution.sh` script executable. Omitting `setup` and just running `make`
-as in "Requirements and Initial Setup" section above 👆, results in the same
-behaviour.
+all the shell scripts present contained in the `scripts` directory executable.
+Omitting `setup` and just running `make` as in "Requirements and Initial Setup" 
+section above 👆, results in the same behaviour.
 ```
 make setup
 ```
