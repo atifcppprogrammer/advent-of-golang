@@ -1,0 +1,22 @@
+name: Contribute a new puzzle solution
+description: New solution to a "Advent of Code" puzzle.
+title: Solve puzzle "<name>" | Year <yyyy> | Day <dd>
+labels: ["solution"]
+body:
+  - type: input
+    id: puzzle-link
+    attributes:
+      label: Puzzle URL
+      description: Please provide the URL for the puzzle whose solution you would like to contribute.
+      placeholder: Required URL will look something like https://adventofcode.com/yyyy/day/dd.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: puzzle-does-not-exist-already
+    attributes:
+      label: Puzzle Solution Exists ? 
+      description: Does a solution already exist for the puzzle for which you are creating this issue.
+      options:
+        - label: I am certain that no solution exists for this puzzle in this repository.
+          required: true

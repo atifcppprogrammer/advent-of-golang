@@ -1,0 +1,32 @@
+name: Improve an existing puzzle solution
+description: Improve an existing solution to a "Advent of Code" puzzle.
+title: Improve puzzle solution "<name>" | Year <yyyy> | Day <dd>
+labels: ["improvement"]
+body:
+  - type: input
+    id: puzzle-link
+    attributes:
+      label: Puzzle URL
+      description: Please provide the URL for the puzzle whose solution you would like to contribute.
+      placeholder: Required URL will look something like https://adventofcode.com/yyyy/day/dd.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: puzzle-improvement-exists
+    attributes:
+      label: Puzzle Improvement Exists ? 
+      description: Does an issue exist already that suggests the same improvements I have suggested ?
+      options:
+        - label: I am certain that no issue suggesting these improvements exists already.
+          required: true
+
+  - type: textarea
+    id: puzzle-improvement-suggestions
+    attributes:
+      label: What improvements you would like to make ?
+      description: Please explain in detail what improvements you have in mind.
+      placeholder: Suggest improvedments in detail
+      value: "Suggested improvements ..."
+    validations:
+      required: true

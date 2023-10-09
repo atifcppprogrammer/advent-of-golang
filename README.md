@@ -19,3 +19,7 @@ should only take a few minutes 👍.
 ## Development Setup
 Please read 👉 [this](.github/DEVELOPMENT_SETUP.md) guide on how to setup this 
 repository locally.
+
+## Contribution Guidelines
+Contributions are welcome, please refer to the guidelines outlined 👉 
+[here](.github/CONTRIBUTING.md).
