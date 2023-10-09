@@ -12,8 +12,9 @@
 
 ## What is Advent of Code ?
 In the event you are not familiar with "Advent of Code", please visit the about page
-on their website [here](https://adventofcode.com/2022/about), and [sign up](https://adventofcode.com/2022/auth/login)
-for an account before reading further. It should only take a few minutes 👍.
+on their website [here](https://adventofcode.com/2022/about). To solve puzzles you 
+will need to [sign up](https://adventofcode.com/2022/auth/login) for an account. It 
+should only take a few minutes 👍.
 
 ## Development Setup
 
