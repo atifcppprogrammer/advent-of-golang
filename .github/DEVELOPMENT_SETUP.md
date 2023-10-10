@@ -15,16 +15,16 @@ mundane actions. A brief explanation for each such target is provided below.
 
 ### `setup`
 This target sets up the git hooks provided in the `.git-hooks` directory and makes
-all the shell scripts present contained in the `scripts` directory executable.
-Omitting `setup` and just running `make` as in "Requirements and Initial Setup" 
-section above 👆, results in the same behaviour.
+all the shell scripts present in the `scripts` directory executable. Omitting `setup` 
+and just running `make` as in "Requirements and Initial Setup" section above 👆,
+results in the same behaviour.
 ```
 make setup
 ```
 
 ### `init`
 This target creates a [Go module](https://go.dev/blog/using-go-modules) for a single
-puzzle's solution. Supposing we are attempting to solve the ["Calorie Counting"](https://adventofcode.com/2022/day/1)
+puzzle's solution. Suppose we are attempting to solve the ["Calorie Counting"](https://adventofcode.com/2022/day/1)
 which is the puzzle for day 1 of the year 2022. The following command will create
 said Go module with some starter code, and include it in the `go.work` file.
 ```
@@ -65,7 +65,7 @@ make solution YEAR=2022 DAY=1
 ### `improve`
 This target will open your git editor with a pre-existing commit template for 
 commiting improvements you have made to a **single** solution, keeping with the
-"Calorie Counting" example the following command.
+"Calorie Counting" example the following command
 ```
 make improve YEAR=2022 DAY=1
 ```
