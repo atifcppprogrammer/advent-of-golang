@@ -9,7 +9,7 @@ command in the repository's root to complete the initial setup.
 make
 ```
 
-## `Makefile` Targets
+## Makefile Targets
 The `Makefile` in the repository's root provides targets for automating certain
 mundane actions. A brief explanation for each such target is provided below.
 
@@ -53,7 +53,7 @@ not need to run this as a git hook is in place to format your code before commit
 make format
 ```
 
-#### `solution`
+### `solution`
 This target will commit your solution with a pre-defined commit message, this will
 ensure that all commits carrying a solution follow a consistent pattern, keeping 
 with the "Calorie Counting" example the following command will create the commit 
@@ -62,7 +62,7 @@ message `solution: year-2022/day-01`.
 make solution YEAR=2022 DAY=1
 ```
 
-#### `improve`
+### `improve`
 This target will open your git editor with a pre-existing commit template for 
 commiting improvements you have made to a **single** solution, keeping with the
 "Calorie Counting" example the following command.
