@@ -39,6 +39,15 @@ target will be invoked as follows.
 make run YEAR=2022 DAY=1 INPUT="./path/to/adventofcode/puzzle/input.txt"
 ```
 
+If the puzzle in question has multiple parts and you wish to execute the solution 
+for a specific part then this can be done in the following manner. We assume that
+the `SolutionPart` variable exposed by the `utilities` package (which corresponds
+to the provide `PART` argument), is used in the solution code to account for the
+different parts.
+```
+make run YEAR=2022 DAY=1 PART=2 INPUT="./path/to/adventofcode/puzzle/input.txt"
+```
+
 ### `test`
 This target will run all provided unit tests for all puzzle solutions and the Go 
 modules in `packages` directory.

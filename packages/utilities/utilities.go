@@ -5,7 +5,21 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
 )
+
+var SolutionPart int
+
+func init() {
+	value, exists := os.LookupEnv("PART")
+	if exists {
+		if valueInt, err := strconv.Atoi(value); err == nil {
+			SolutionPart = valueInt
+		} else {
+			panic(err)
+		}
+	}
+}
 
 func PrintSolution(event string, day int, name, solution string) {
 	fmt.Printf(
