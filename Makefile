@@ -1,3 +1,5 @@
+.PHONY: setup init run test solution improve format
+
 setup:
 	@chmod +x ./scripts/*
 	@chmod +x .git-hooks/*
