@@ -23,8 +23,8 @@ else
 	$(call run_solution,$(YEAR),$(DAY),$(INPUT),1)
 endif
 
-test: 
-	@go test -v ./packages/* && go test -v ./solutions/*/*
+test: ./scripts/makefile-test.sh
+	@./scripts/makefile-test.sh
 
 solution:
 	$(call stage_solution,$(YEAR),$(DAY)); \
