@@ -11,6 +11,10 @@ import (
 var SolutionPart int
 
 func init() {
+	SetSolutionPart()
+}
+
+func SetSolutionPart() {
 	value, exists := os.LookupEnv("PART")
 	if exists {
 		if valueInt, err := strconv.Atoi(value); err == nil {
