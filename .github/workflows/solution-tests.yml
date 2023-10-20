@@ -20,7 +20,7 @@ jobs:
       - name: Provising required version of Golang
         uses: actions/setup-go@v3
         with:
-            go-version: 1.21.1 
+            go-version: 1.21.3 
 
       - name: Running solution tests using `Makefile`
         run: make test
