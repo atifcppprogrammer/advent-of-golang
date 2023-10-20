@@ -62,6 +62,14 @@ not need to run this as a git hook is in place to format your code before commit
 make format
 ```
 
+### `version`
+This target is intended for setting the `Go` version for all packages and solution
+modules to the latest version, this target is _not_ intended for use by contributors. 
+The repository owner is reponsible for bumping all `Go` modules to the latest version.
+```
+make version GO=1.21.1
+```
+
 ### `solution`
 This target will commit your solution with a pre-defined commit message, this will
 ensure that all commits carrying a solution follow a consistent pattern, keeping 
