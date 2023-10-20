@@ -6,4 +6,5 @@ use (
 	./solutions/year-2022/day-02
 	./solutions/year-2022/day-03
 	./solutions/year-2022/day-04
+	./solutions/year-2022/day-05
 )
