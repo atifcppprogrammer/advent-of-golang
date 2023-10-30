@@ -1,6 +1,6 @@
 name: Improve an existing puzzle solution
 description: Improve an existing solution to a "Advent of Code" puzzle.
-title: Improve puzzle solution "<name>" | Year <yyyy> | Day <dd>
+title: Improve solution for puzzle "<name>" | Year <yyyy> | Day <dd>
 labels: ["improvement"]
 body:
   - type: input
