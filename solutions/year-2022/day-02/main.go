@@ -14,7 +14,7 @@ const (
 	scissorPoints = 3
 )
 
-var roundOutcomeMap = map[string]int{
+var partOneRoundOutcomeMap = map[string]int{
 	"A X": roundDraw + rockPoints,
 	"A Y": roundLost + paperPoints,
 	"A Z": roundWon + scissorPoints,
@@ -26,6 +26,18 @@ var roundOutcomeMap = map[string]int{
 	"C Z": roundDraw + scissorPoints,
 }
 
+var partTwoRoundOutcomeMap = map[string]int{
+	"A X": roundLost + scissorPoints,
+	"A Y": roundDraw + rockPoints,
+	"A Z": roundWon + paperPoints,
+	"B X": roundLost + rockPoints,
+	"B Y": roundDraw + paperPoints,
+	"B Z": roundWon + scissorPoints,
+	"C X": roundLost + paperPoints,
+	"C Y": roundDraw + scissorPoints,
+	"C Z": roundWon + rockPoints,
+}
+
 func main() {
 	filepath := utilities.GetInputFile()
 	lines, _ := utilities.ReadLines(filepath)
@@ -35,8 +47,15 @@ func main() {
 }
 
 func solution(lines []string) (outcomeSum int) {
+	var solutionPartOutcomeMap map[string]int
+	if utilities.SolutionPart == 1 {
+		solutionPartOutcomeMap = partOneRoundOutcomeMap
+	} else if utilities.SolutionPart == 2 {
+		solutionPartOutcomeMap = partTwoRoundOutcomeMap
+	}
+
 	for _, line := range lines {
-		outcomeSum += roundOutcomeMap[line]
+		outcomeSum += solutionPartOutcomeMap[line]
 	}
 	return
 }
