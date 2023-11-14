@@ -1,4 +1,4 @@
-name: Run unit tests for all solutions
+name: Run solution unit tests
 on:
   pull_request:
     branches:
