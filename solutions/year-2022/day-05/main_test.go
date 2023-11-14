@@ -1,7 +1,7 @@
 package main
 
 import (
-	"adventofgolang/packages/utilities"
+	"adventofgolang/internal/utilities"
 	"adventofgolang/solutions/year-2022/day-05/structures"
 	"fmt"
 	"testing"

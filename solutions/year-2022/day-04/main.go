@@ -1,7 +1,7 @@
 package main
 
 import (
-	"adventofgolang/packages/utilities"
+	"adventofgolang/internal/utilities"
 	"log"
 	"strconv"
 	"strings"
