@@ -1,10 +1,11 @@
 package main
 
 import (
-	"adventofgolang/internal/utilities"
-	"adventofgolang/solutions/year-2022/day-05/structures"
 	"fmt"
 	"testing"
+
+	"github.com/atifcppprogrammer/advent-of-golang/internal/utilities"
+	"github.com/atifcppprogrammer/advent-of-golang/solutions/year-2022/day-05/structures"
 )
 
 func getListFrom(other []rune) *structures.List {

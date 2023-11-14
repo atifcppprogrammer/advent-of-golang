@@ -1,11 +1,12 @@
 package main
 
 import (
-	"adventofgolang/internal/utilities"
 	"log"
 	"strconv"
 	"strings"
 	"sync"
+
+	"github.com/atifcppprogrammer/advent-of-golang/internal/utilities"
 )
 
 func main() {

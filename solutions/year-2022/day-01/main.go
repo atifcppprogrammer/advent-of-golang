@@ -1,8 +1,9 @@
 package main
 
 import (
-	"adventofgolang/internal/utilities"
 	"strconv"
+
+	"github.com/atifcppprogrammer/advent-of-golang/internal/utilities"
 )
 
 func main() {

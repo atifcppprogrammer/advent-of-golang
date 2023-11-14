@@ -10,5 +10,5 @@ sed -i -e "s/{{YEAR}}/$year/g" main.go
 sed -i -e "s/{{DAY}}/$2/g" main.go
 sed -i -e "s/{{NAME}}/$name/g" main.go
 
-go mod init adventofgolang/$puzzle_path && cd -
+go mod init github.com/atifcppprogrammer/advent-of-golang/$puzzle_path && cd -
 go work use ./$puzzle_path

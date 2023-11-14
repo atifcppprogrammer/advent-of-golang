@@ -1,10 +1,11 @@
 package main
 
 import (
-	"adventofgolang/internal/utilities"
 	"log"
 	"strconv"
 	"sync"
+
+	"github.com/atifcppprogrammer/advent-of-golang/internal/utilities"
 )
 
 var PriorityMap = make(map[rune]int)

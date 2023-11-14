@@ -1,8 +1,9 @@
 package main
 
 import (
-	"adventofgolang/internal/utilities"
 	"testing"
+
+	"github.com/atifcppprogrammer/advent-of-golang/internal/utilities"
 )
 
 func setSolutionPartEnv(t *testing.T, solutionPart string) {
