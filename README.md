@@ -5,8 +5,11 @@
   </h4>
   <p align="center">
     <a href="https://github.com/atifcppprogrammer/advent-of-golang/blob/master/LICENSE">
-      <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
-    </a>
+      <img src="https://img.shields.io/badge/License-MIT-blue.svg" /></a>
+    <a href="https://github.com/atifcppprogrammer/advent-of-golang/tree/master">
+      <img src="https://img.shields.io/github/last-commit/atifcppprogrammer/advent-of-golang/master"></a>
+    <a href="https://github.com/atifcppprogrammer/advent-of-golang/actions/workflows/solution-tests.yml">
+      <img src="https://img.shields.io/github/actions/workflow/status/atifcppprogrammer/advent-of-golang/solution-tests.yml?label=tests"></a>
   </p>
 </div>
 
