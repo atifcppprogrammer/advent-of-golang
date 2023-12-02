@@ -13,7 +13,7 @@ func setSolutionPartEnv(t *testing.T, solutionPart string) {
 }
 
 func TestSolution(t *testing.T) {
-	t.Run("solves example input correctly for part-1", func(t *testing.T) {
+	t.Run("solves example input correctly for each part", func(t *testing.T) {
 		testCases := []struct {
 			solutionPart string
 			expected     int
