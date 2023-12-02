@@ -8,4 +8,5 @@ use (
 	./solutions/year-2022/day-04
 	./solutions/year-2022/day-05
 	./solutions/year-2022/day-06
+	./solutions/year-2023/day-01
 )
