@@ -3,6 +3,7 @@ go 1.21.5
 use (
 	./internal/utilities
 	./solutions/year-2021/day-01
+	./solutions/year-2021/day-02
 	./solutions/year-2022/day-01
 	./solutions/year-2022/day-02
 	./solutions/year-2022/day-03
