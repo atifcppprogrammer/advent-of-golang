@@ -67,7 +67,7 @@ This target is intended for setting the `Go` version for all packages and soluti
 modules to the latest version, this target is _not_ intended for use by contributors. 
 The repository owner is reponsible for bumping all `Go` modules to the latest version.
 ```
-make version GO=1.21.5
+make version GO=1.22.2
 ```
 
 ### `solution`

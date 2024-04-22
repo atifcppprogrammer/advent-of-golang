@@ -1,3 +1,3 @@
 module github.com/atifcppprogrammer/advent-of-golang/internal/utilities
 
-go 1.21.5
+go 1.22.2
