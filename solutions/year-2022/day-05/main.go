@@ -6,7 +6,6 @@ import (
 	"strconv"
 
 	"github.com/atifcppprogrammer/advent-of-golang/internal/utilities"
-	"github.com/atifcppprogrammer/advent-of-golang/solutions/year-2022/day-05/structures"
 )
 
 func main() {
@@ -31,7 +30,7 @@ func solution(lines []string) string {
 	return result
 }
 
-func execInstr(stacks []structures.List, instr string) {
+func execInstr(stacks []List, instr string) {
 	pattern := regexp.MustCompile("[0-9]+")
 	matches := pattern.FindAllString(instr, -1)
 
@@ -58,7 +57,7 @@ func execInstr(stacks []structures.List, instr string) {
 			return
 		}
 
-		revStack := structures.List{}
+		revStack := List{}
 		for ; diff > 0; diff-- {
 			revStack.Push(source.Pop())
 		}
@@ -76,7 +75,7 @@ func execInstr(stacks []structures.List, instr string) {
 	}
 }
 
-func getStacks(lines []string) ([]structures.List, int) {
+func getStacks(lines []string) ([]List, int) {
 	var descriptionIndex, instructionIndex int
 	for index, line := range lines {
 		if line == "" {
@@ -86,8 +85,8 @@ func getStacks(lines []string) ([]structures.List, int) {
 		}
 	}
 
-	var populateStack = func(j int) structures.List {
-		stack := structures.List{}
+	var populateStack = func(j int) List {
+		stack := List{}
 		for i := descriptionIndex - 1; true; i-- {
 			if i == -1 || j >= len(lines[i]) || lines[i][j] == 32 {
 				break
@@ -100,7 +99,7 @@ func getStacks(lines []string) ([]structures.List, int) {
 		return stack
 	}
 
-	stacks := make([]structures.List, 0)
+	stacks := make([]List, 0)
 	for index, char := range lines[descriptionIndex] {
 		if index%2 != 0 && char != ' ' {
 			stacks = append(stacks, populateStack(index))

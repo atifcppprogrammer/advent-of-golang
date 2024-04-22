@@ -5,11 +5,10 @@ import (
 	"testing"
 
 	"github.com/atifcppprogrammer/advent-of-golang/internal/utilities"
-	"github.com/atifcppprogrammer/advent-of-golang/solutions/year-2022/day-05/structures"
 )
 
-func getListFrom(other []rune) *structures.List {
-	list := new(structures.List)
+func getListFrom(other []rune) *List {
+	list := new(List)
 	for _, element := range other {
 		list.Push(element)
 	}
@@ -21,7 +20,7 @@ func setSolutionPartEnv(t *testing.T, solutionPart string) {
 	utilities.SetSolutionPart()
 }
 
-func assertListSlice(t *testing.T, exp, rec []structures.List) {
+func assertListSlice(t *testing.T, exp, rec []List) {
 	if len(exp) != len(rec) {
 		t.Errorf("expected %q received %q", len(exp), len(rec))
 	}
@@ -126,7 +125,7 @@ func TestGetStacks(t *testing.T) {
 		}
 
 		receivedStacks, instrIndex := getStacks(lines)
-		expectedStacks := []structures.List{
+		expectedStacks := []List{
 			*getListFrom([]rune{'Z', 'N'}),
 			*getListFrom([]rune{'M', 'C', 'D'}),
 			*getListFrom([]rune{'P'}),
