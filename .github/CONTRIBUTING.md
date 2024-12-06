@@ -3,8 +3,8 @@ You can contribute to this repository in one of three ways, each of these have b
 discussed below.
 
 ## Contributing a new Solution
-Puzzles for the year 2022 and onwards are reserved for the [owner](https://github.com/atifcppprogrammer),
-you are however invited to contribute solutions for the years 2015 through to 2021.
+Puzzles for the year 2024 and onwards are reserved for the [owner](https://github.com/atifcppprogrammer),
+you are however invited to contribute solutions for the years 2015 through to 2023.
 Please do ensure that as part of your solution you at least provide a unit test that 
 solves the example input provided for the puzzle in question correctly. Complete 
 steps for making this type of contribution are outlined _in order_ below.
