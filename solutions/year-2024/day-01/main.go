@@ -12,7 +12,7 @@ func main() {
 	lines, _ := utilities.ReadLines(filepath)
 
 	result := solution(lines)
-	utilities.PrintSolution("2024", 01, "", strconv.Itoa(result))
+	utilities.PrintSolution("2024", 01, "Historian Hysteria", strconv.Itoa(result))
 }
 
 func solution(lines []string) (result int) {
